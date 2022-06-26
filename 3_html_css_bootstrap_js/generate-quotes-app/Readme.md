@@ -1,4 +1,4 @@
-Descrption
+Description
 --------------------------------
 App that generate random quotes
 
