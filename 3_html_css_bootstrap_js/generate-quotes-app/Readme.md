@@ -2,6 +2,6 @@ Description
 --------------------------------
 App that generate random quotes
 
-Website Url:
+Website Url
 --------------------------------
 https://everyday-quotes-app.netlify.app/
