@@ -1,0 +1,405 @@
+
+
+:root{
+    --container-color:#f5f5f5;
+}
+
+.main{
+    background-color: var(--container-color);
+}
+
+.nav-item{
+position: relative;
+overflow: hidden;
+padding-left: 1rem ;
+color: white;
+} 
+
+.nav-item .nav-link{
+    color: white;
+}
+
+.nav-item .nav-link:hover{
+    color: white;
+}
+
+.nav-item::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.nav-item:hover::after{
+    opacity: 1;
+    width: 50px;
+}
+
+#home{
+    background-image: url(images/intro-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#home h1{
+    font-size: 5rem;
+}
+
+.author-nm h1{
+    font-size: 4.5rem;
+}
+
+.progress{
+    height: .75rem !important;
+}
+
+ul{
+    list-style: none;
+}
+
+.serv-title{
+    font-size: 3rem;
+}
+
+#services .mine-brdr{
+    border-radius: 1rem;
+}
+
+#services i{
+    border-radius: 50%;
+    padding: 25px;
+    position: relative;    
+}
+
+#services .none-eq{
+    padding: 25  30px;
+}
+
+#services .mine-brdr:hover i{
+    background-color: #0078ff;
+    transition: .5s;
+    color: white;
+}
+
+#services i::after{
+    position: absolute;
+    content: '';
+    width: 115px;
+    height: 115px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    border-radius: 50%;
+    border: solid 10px #0078ff;
+    transition: .5s;
+}
+
+#services .mine-brdr:hover i::after{
+    opacity: .2;
+}
+
+.brdr-title p{
+    position: relative;
+    
+    
+}
+
+.brdr-title p::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom : -20px;
+    transform: translatex(-50%);
+    height: 5px;
+    width: 50px;
+    background-color: #0078ff;
+}
+
+.about-bg{
+    background-image: url(images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+    margin-top: 3rem;
+}
+
+.about-bg .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.about-bg .layer{
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0, 119, 255, 0.7);
+    top: 50%;
+}
+
+.about-bg h3 + h3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.about-bg h3{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+
+}
+
+.about-bg i{
+    padding: 1rem;
+    position: relative;
+    color: white;
+}
+
+.about-bg i::after{
+    content: '';
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border: solid #cde1f8 10px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid #0078ff 3px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.add::after{
+    content: '';
+    position: absolute;
+    width: .2rem;
+    height: 1.5rem;
+    background-color: #0078ff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add::before{
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: .2rem;
+    background-color: #0078ff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work img{
+    transition: .5s;
+    
+
+}
+
+.parent{
+    background-color: white;
+}
+
+.work .parent:hover img{
+    transform: scale(1.3);
+
+}
+
+.work p{
+    color: #0078ff;
+    font-size: .75rem;
+}
+
+.work h3{
+    font-size: 1.2rem;
+}
+
+.mine-shadow-p{
+    position: relative;
+
+}
+
+    .layer-crsl{
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 119, 255, 0.7);
+    }
+
+.test{
+   color: white;
+}
+
+.test img{
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.test h5{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.test p{
+    padding: 0 8rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+}
+
+.bg-crsl{
+    background-image: url(images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.cd1, .cd2, .cd3{
+    position: relative;
+}
+
+.img-bdg {
+    position: relative;
+}
+
+.img-bdg span{
+    padding: 10px;
+    position: absolute;
+    bottom: -7%;
+    left: 50%;
+    transform: translatex(-50%);
+    font-weight: 500;
+}
+
+.card-footer img{
+    width: 15%;
+    border-radius: 50%;
+}
+
+.card-footer a{
+    margin-left: .3rem;
+    color: black ;
+    font-size: 1rem;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.card-footer a:hover{
+    color: #0078ff;
+}
+
+.card-body a{
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.card-body a:hover{
+    color: #0078ff;
+}
+
+#contact{
+    background-image: url(images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+input, textarea{
+    border: solid .5px rgba(128, 128, 128, 0.2);
+    width: 100%;
+    padding: 10px 0;
+    font-size: .9rem;
+}
+
+.brd-cntct i{
+   margin: 0 15px;
+   font-size: 1.2rem;
+   position: relative;
+   transition: .5s;
+   padding: 10px;
+   border-radius: 50%;
+}
+
+.brd-cntct i:hover{
+   background-color: #0078ff;
+   color: white;
+
+}
+
+.brd-cntct i::after{
+    content: '';
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid 2px #0078ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.brd-cntct i:hover::after{
+    border: solid 25px rgba(0, 119, 255, 0.3);
+    
+    
+}
+
+#contact .cntct-lyr{
+    background-color: rgba(0, 119, 255, 0.7);
+}
+
+
+
+/* @keyframes wrt{
+    0%{
+        color: transparent;
+    }
+   
+  
+    100%{
+        color: white;
+    }
+} */
+
+
+
+/* .anm-1{
+    color: transparent;
+    animation-name: wrt;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.anm-2{
+    color: transparent;
+    animation-name: wrt;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+} */
+

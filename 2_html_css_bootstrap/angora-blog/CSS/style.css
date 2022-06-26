@@ -1,0 +1,409 @@
+#navb .nav-item {
+    padding: 0 .8rem;
+    font-weight: bold;
+}
+
+#navb .nav-item i {
+    padding: .3rem 0;
+}
+
+.nav-item-icons {
+    display: flex !important;
+    justify-content: space-between;
+    /* background-color: indigo; */
+    width: 10%;
+
+
+}
+
+
+#navb .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #f25454;
+}
+
+#navb .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: .9rem;
+}
+
+#home .carousel-item h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    /* padding: 2rem ; */
+    width: 50%;
+    line-height: 1;
+
+}
+
+/* #home .carousel-item{
+    transition: transform 1s ease, opacity 9s ease-out
+    transition: transform 1s ease, opacity .5s ease-out
+} */
+
+#home .carousel-control-next {
+    left: 0;
+    top: 43.5%;
+    width: 50px;
+    height: 43px;
+    border: solid 1px white;
+    border-left: 0;
+    /* border-radius: 5px; */
+
+
+}
+
+#home .carousel-control-prev {
+    top: 50%;
+    width: 50px;
+    height: 43px;
+    border: solid 1px white;
+    border-left: 0;
+    /* border-radius: 5px; */
+
+}
+
+#home .carousel-control-prev:hover {
+    background-color: rgba(255, 255, 255, 0.529);
+}
+
+#home .carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 0.508);
+}
+
+#home .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1.5rem;
+}
+
+#home .ct-1 {
+    background-image: url(../images/slideshow-1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+}
+
+#home .ct-2 {
+    background-image: url(../images/slideshow-2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+}
+
+#home .ct-3 {
+    background-image: url(../images/slideshow-3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+}
+
+
+.progress-bar {
+    background-color: #f25454;
+}
+
+.progress {
+    height: .3rem;
+}
+
+.main-title {
+    position: relative;
+    color: rgba(128, 128, 128, 0.3);
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+.main-title::before {
+    content: 'About Us';
+    position: absolute;
+    color: rgba(0, 0, 0, 0.823);
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 40px;
+    background-color: black;
+    left: 50%;
+    bottom: -15%;
+    transform: translatex(-50%);
+    transition: .3s;
+}
+
+
+.main-title:hover::after {
+    width: 70px;
+}
+
+
+
+.main-title+p {
+    font-size: 1.3rem;
+    width: 75%;
+    margin: auto;
+}
+
+
+.l-lyr {
+    color: rgba(128, 128, 128, 0.3);
+    font-size: 5rem;
+}
+
+.l-lyr+h2 {
+
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.823);
+    bottom: 5%;
+
+}
+
+.l-lyr::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 40px;
+    background-color: black;
+    left: 50%;
+    bottom: -5%;
+    transform: translatex(-50%);
+    transition: .3s;
+}
+
+.main-title-2:hover .l-lyr::after {
+    width: 70px;
+}
+
+
+
+.item1 {
+
+    position: relative;
+    overflow: hidden;
+}
+
+.lyr1 {
+    background-color: rgba(242, 84, 84, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.item1:hover .lyr1 {
+    opacity: 1;
+    top: 0px;
+}
+
+.item1 img {
+    transition: .3s;
+}
+
+.item1:hover img {
+    transform: scale(1.1);
+}
+
+.item0 h3 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0;
+    transition: 0.3;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.item0 p {
+    text-align: center;
+    font-size: .9rem;
+    color: gray;
+}
+
+
+.item0:hover h3 {
+    color: #f25454;
+}
+
+#team a {
+    background-color: #f25454;
+    padding: 13 20;
+}
+
+#services {
+    background-color: #fafafa;
+}
+
+.serv h2 {
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.serv h2:hover {
+    color: #f25454;
+}
+
+.serv p {
+    font-size: 14px;
+    color: gray;
+}
+
+.serv i {
+    font-size: 1.5rem;
+    color: #f25454;
+}
+
+#contact h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    transition: .3s;
+
+}
+
+#contact h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#contact h4:hover {
+    color: #f25454;
+}
+
+#contact p {
+    font-size: 14px;
+    color: gray;
+}
+
+#contact i {
+    color: #f25454;
+}
+
+#contact button {
+    background-color: #f25454;
+}
+
+#footer img {
+    padding: 50px 0;
+}
+
+#footer {
+    background-color: #222;
+}
+
+#footer h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#footer p {
+    font-size: 15px;
+    color: #b0b0b0;
+    padding: 0px;
+    margin-bottom: .3rem;
+}
+
+.pp-tg div {
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    color: #b0b0b0;
+    font-size: 14px;
+    border: solid 1px #b0b0b0;
+    transition: .3s;
+
+}
+
+.pp-tg div:hover {
+    border: solid 1px #f25454;
+    color: #f25454;
+}
+
+#footer2 {
+    background-color: #1a1a1a;
+}
+
+#footer2 i {
+    color: white;
+    padding: 0 .5rem;
+
+}
+
+#footer2 p {
+    color: #b0b0b0;
+    font-size: 15px;
+    padding-top: 10px;
+
+}
+
+#footer span {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* .tm-lyr-img{
+    position: relative;
+}
+
+.tm-lyr{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 84, 84, 0.9);
+    position: absolute;
+    top: 5%;
+    right: 0;
+    transition: .3s;
+    opacity: 1;
+    transition: .3s;
+
+}
+
+.tm-lyr-img:hover .tm-lyr{
+    opacity: 0;
+    top: 0;
+    
+}
+
+.tm-img{
+    transition: .3s;
+}
+
+.tm-lyr-img:hover .tm-img{
+    transform: scale(1.1);
+} */
+
+/* .main-title-2{
+
+} */
+
+/* .prgs-cont{
+    width: 50%;
+} */
+/* .carousel-control-next-icon:hover, .carousel-control-prev-icon:hover{
+    width: 1.5rem;
+} */
+
+/* .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    background-color: white;
+    color: green;
+   
+} */

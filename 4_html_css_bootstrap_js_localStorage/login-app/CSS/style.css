@@ -1,0 +1,83 @@
+body{
+    background-color: #24353f;
+}
+
+section{
+    box-shadow: 5px 2px 54px -9px rgb(0 0 0);
+}
+
+h1{
+    color: #1ba2b8;
+}
+
+.form-control{
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.form-control:focus{
+    background-color: transparent;
+    box-shadow: 0 0 0;
+    color: white;
+}
+
+.form-control::placeholder{
+    color: rgb(206, 212, 218, .8);
+}
+
+.btn:hover{
+    color: white;
+}
+
+nav{
+   box-shadow:-5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+#welcome-div{
+    box-shadow:-5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+#success{
+    display: none;
+}
+
+#emailExist{
+    display: none;
+}
+
+#inputsReq{
+    display: none;
+}
+
+#loginInputReq{
+    display: none;
+}
+
+#loginUserError{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

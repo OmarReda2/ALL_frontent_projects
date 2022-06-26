@@ -1,0 +1,59 @@
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="Css/style.css">
+        <link rel="stylesheet" href="Css/all.min.css">
+    </head>
+
+    <body>
+        <div class="w-50 m-auto shadow mt-5 p-5">
+            <h1>CRUD System</h1>
+            <label for="">ProductName</label>
+            <input type="text" id="productName" class="form-control mb-3">
+
+            <div id="nameAlert" class="alert alert-danger" role="alert">
+                <strong>Please start with capital letter</strong>
+            </div>
+            
+            
+            <label for="">ProductCatogery</label>
+            <input type="text" id="productCatogery" class="form-control mb-3">
+            
+            <label for="">ProductPrice</label>
+            <input type="number" id="productPrice" class="form-control mb-3">
+            
+            <label for="">ProductDescription</label>
+            <textarea type="text" id="productDescription" class="form-control mb-3"></textarea>
+            <button id="btn" onclick="createProduct();" class="btn btn-outline-info mt-3">add</button>
+            <button onclick="clearForm();" class="btn btn-outline-info mt-3">clear</button>
+        </div>
+
+        <input onkeyup="searchProduct();" type="text" placeholder="search" id="searchInput" class="form-control w-50 m-auto mt-5">
+        <table class="table container table-striped text-center mt-5">
+            <thead>
+                <tr>
+                    <th>index</th>
+                    <th>name</th>
+                    <th>category</th>
+                    <th>price</th>
+                    <th>description</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+              
+            </tbody>
+        </table>
+        
+
+
+        <script src="main.js"></script>
+    </body>
+</html>

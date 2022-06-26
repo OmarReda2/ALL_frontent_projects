@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <h1 class="text-secondary text-opacity-75 fs-3 w-75 m-auto mt-5">Bookmarker</h1>
+    <hr class="w-75 m-auto mt-3 mb-0">
+
+    <div class="bg-dark w-75 bg-opacity-10 m-auto mt-3 text-center pt-5 pb-5">
+        <h2 class="fw-bold fs-3">Bookmark your favourite sites</h2>
+
+        <label for="bookmarkName" class="fw-bold mt-3">Site Name</label>
+        <input id="bookmarkName" type="text" placeholder="Bookmark name" class="form-control w-75 m-auto mt-2">
+
+
+        <label for="bookmarkURL" class="fw-bold mt-3">Site URL</label>
+        <input id="bookmarkURL" type="text" placeholder="Website URL" value="https://" class="form-control w-75 m-auto mt-2">
+        <div id="alert" class="alert-danger w-75 m-auto fw-bold mb-3">please start with https:// or http://</div>
+
+        <button id="addBtn" class="btn btn-primary mt-3">Add</button>
+    </div>
+
+    <hr class="w-75 m-auto mt-3 mb-0">
+    <p class="text-secondary text-opacity-75 w-75 m-auto mt-3 fs-6 fw-bold">© 2019 Bookmarker Inc.</p>
+
+    <table class="table table-success container mt-5">
+        <thead>
+            <tr>
+                <th>Bookmark Name</th>
+                <th>Visite</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody"> </tbody>
+
+    </table>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form>
+        <fieldset style="background-color: #a7292a;">
+            <legend style="background-color: #4982b9;">Personal Data</legend>
+
+            <fieldset style="background-color: #d9a422;">
+                <legend style="background-color: #6397ea">
+                    <h6>YourName</h6>
+                </legend>
+                <br>
+
+                <table>
+                    <tr>
+                        <td><label>first name</label></td>
+                        <td><label>:</label></td>
+                        <td><input type=text" name="fname" placeholder="ex.omar" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>last name</label></td>
+                        <td><label>:</label></td>
+                        <td><input type="text" name="lname" placeholder="ex.reda" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br><br>
+
+            <table>
+                <tr>
+                    <td><label>your phone</label></td>
+                    <td><label>:</label></td>
+                    <td><input type="tel" name="phone" min="11" max="11"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><label>:</label></td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>password</label></td>
+                    <td><label>:</label></td>
+                    <td><input type="password" name="password" required minlength="6"></td>
+                </tr>
+
+                <tr>
+                    <td><label>re-password</label></td>
+                    <td><label>:</label></td>
+                    <td><input type="password" name="re-password" required minlength="6"></td>
+                </tr>
+            </table>
+            <br><br><br>
+
+            <input type="radio" name="gender" required>
+            <label>Male</label>
+            <br>
+
+            <input type="radio" name="gender">
+            <label>Female</label>
+            <br><br>
+            
+
+            <input type="checkbox" name="grad">
+            <label>Student</label>
+            <br>
+
+            <input type="checkbox" name="grad">
+            <label>Graduated</label>
+            <br><br>
+
+
+            <select name="university">
+                <option value="Banha">AUC</option>
+                <option value="Helwan">Helwan</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Ainshams">Ainshams</option>
+                <option value="Banha">Banha</option>
+
+            </select>
+            <br>
+
+
+            <button type="submit" style="background-color: black; color: white;">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
